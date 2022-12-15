@@ -7,7 +7,7 @@ async function getCoord() {
     try {
         const city = document.getElementById('city').value
         const state = document.getElementById('state').value
-        const link = 'http://api.openweathermap.org/geo/1.0/direct?q=' + city + ',' + state + 'US&limit=1&appid=cdbda3b0e3efc59ea8cbf0e6837108f2'
+        const link = 'https://api.openweathermap.org/geo/1.0/direct?q=' + city + ',' + state + 'US&limit=1&appid=cdbda3b0e3efc59ea8cbf0e6837108f2'
         const response = await fetch(link,
             {mode: 'cors'}); 
         const data = await response.json();
