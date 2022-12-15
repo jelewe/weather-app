@@ -1,0 +1,57 @@
+body {
+    background: lightblue;
+    color: black;
+    font-size: 16px;
+    font-family: 'Cabin', sans-serif;
+    background-size: cover;
+}
+
+.header {
+    text-align: center;
+    padding: 2rem;
+    color: lightseagreen;
+    text-shadow: 2px 2px 1px rgb(65, 64, 64);
+
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formlist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 4px;
+}
+
+#first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: larger;
+}
+
+#first  img {
+    height: 50px;
+    width: 50px;
+}
+
+#second {
+    text-align: right;
+}
+
+#fourth {
+    text-align: center;
+}
