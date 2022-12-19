@@ -32,7 +32,8 @@ async function getWeather(lat, lon) {
 
 //DOM
 const printError = (error) => {
-    document.querySelector('.content').innerText = error
+    console.log(error)
+    document.querySelector('.content').innerText = "Something went wrong... please try again!"
 }
 
 const displayData = (cloudiness, humidity, temp, windSpeed, description, city, icon) => {
