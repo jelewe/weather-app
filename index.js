@@ -1,8 +1,15 @@
 const submitBtn = document.querySelector('.submit')
 submitBtn.addEventListener('click', getCoord)
 
-//controller
+const textBox = document.getElementById('city')
+textBox.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        e.preventDefault()
+        submitBtn.click();
+    }
+})
 
+//controller
 async function getCoord() {
     try {
         const city = document.getElementById('city').value
@@ -33,7 +40,10 @@ async function getWeather(lat, lon) {
 //DOM
 const printError = (error) => {
     console.log(error)
-    document.querySelector('.content').innerText = "Something went wrong... please try again!"
+    document.getElementById('first').innerText = "Something went wrong... please try again!"
+    document.getElementById('second').innerText = ""
+    document.getElementById('third').innerText = ""
+    document.getElementById('fourth').innerText = ""
 }
 
 const displayData = (cloudiness, humidity, temp, windSpeed, description, city, icon) => {
