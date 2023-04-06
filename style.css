@@ -1,5 +1,5 @@
 body {
-    background: lightblue;
+    background: #ddd3d3;
     color: black;
     font-size: 16px;
     font-family: 'Cabin', sans-serif;
@@ -9,8 +9,8 @@ body {
 .header {
     text-align: center;
     padding: 2rem;
-    color: lightseagreen;
-    text-shadow: 2px 2px 1px rgb(65, 64, 64);
+    color: #022475;
+    text-shadow: 1px 1px 1px rgb(65, 64, 64);
 
 }
 
