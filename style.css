@@ -32,6 +32,10 @@ button:hover {
 
 }
 
+h1 {
+    margin: 0;
+}
+
 .header {
     text-align: center;
     padding: 2rem;
