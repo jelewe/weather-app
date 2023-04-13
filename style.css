@@ -4,6 +4,32 @@ body {
     font-size: 16px;
     font-family: 'Cabin', sans-serif;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem;
+}
+
+html {
+    height: 100vh;
+}
+
+button {
+    font-family: 'Cabin', sans-serif;
+    border-radius: 4px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.container {
+    background-color:rgb(221, 211, 211, .45);
+    max-width: 50%;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 8px;
+
 }
 
 .header {
@@ -31,7 +57,7 @@ body {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
-    background: white;
+    background: rgb(245, 244, 244);
     border-radius: 4px;
 }
 
@@ -52,6 +78,34 @@ body {
     text-align: right;
 }
 
-#fourth {
+#third, #fourth {
+    margin-top: 0.75rem;
     text-align: center;
+}
+
+@media screen and (max-width: 850px) {
+
+    body {
+        margin: 1rem;
+    }
+
+    .header {
+        padding: 0;
+    }
+
+    .formList {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 200px;
+    }
+
+    input {
+        display: block;
+    }
+
+    label {
+        display:block;
+        margin-top: 1rem;
+    }
 }
